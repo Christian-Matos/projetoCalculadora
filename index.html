@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    
+    <section class="calculator-area">
+        <div class="screen-area"></div>
+        <div class="numbers-area">
+            <div class="number" onclick="numberClicked(this.textContent)">1</div>
+            <div class="number" onclick="numberClicked(this.textContent)">2</div>
+            <div class="number" onclick="numberClicked(this.textContent)">3</div>
+            <div id="division" class="signal" onclick="numberClicked(this.textContent)">/</div>
+            <div class="number" onclick="numberClicked(this.textContent)">4</div>
+            <div class="number" onclick="numberClicked(this.textContent)">5</div>
+            <div class="number" onclick="numberClicked(this.textContent)">6</div>
+            <div id="multiplication" class="signal" onclick="numberClicked(this.textContent)">x</div>
+            <div class="number" onclick="numberClicked(this.textContent)">7</div>
+            <div class="number" onclick="numberClicked(this.textContent)">8</div>
+            <div class="number" onclick="numberClicked(this.textContent)">9</div>
+            <div id="subtraction" class="signal" onclick="numberClicked(this.textContent)">-</div>
+            <div class="clear-operation" onclick="clearScreenArea()">C</div>
+            <div class="number" onclick="numberClicked(this.textContent)">0</div>
+            <div class="result" onclick="operations()">=</div>
+            <div id="addition" class="signal" onclick="numberClicked(this.textContent)">+</div>
+        </div>  
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
